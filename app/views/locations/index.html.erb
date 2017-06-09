@@ -2,6 +2,7 @@
 
 <% @locations.each do |current_location| %>
   <%= render 'single_location', location: current_location %>
+  <%= link_to 'Edit', edit_location_path(current_location) %>
 <% end %>
 
 <p>

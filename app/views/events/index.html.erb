@@ -1,10 +1,7 @@
 <h1>Events</h1>
 
 <% @events.each do |event| %>
-    <h3><%= event.name %></h3>
-    <h4>Date: <%= event.date %></h4>
-    <%= link_to 'View Event', event_path(event) %>
-    <p>---------------</p>
+  <%= render 'single_event', event: event %>
 <% end %>
 
 <p>

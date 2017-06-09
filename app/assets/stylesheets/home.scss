@@ -4,4 +4,20 @@
 
 body {
   font-family: helvetica;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+.left-column {
+  width: 50%;
+  float: left;
+  margin: auto;
+  text-align: center;
+}
+.right-column {
+  width: 50%;
+  float: left;
+  margin: auto;
+  text-align: center;
 }
