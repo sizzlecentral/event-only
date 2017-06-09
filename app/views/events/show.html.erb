@@ -1,1 +1,3 @@
-events#show page
+<h3><%= @event.name %></h3>
+<strong>Date: <%= @event.date %></strong><br />
+<%= link_to 'Edit', edit_event_path %> | <%= link_to 'Delete', event_path(@event), method: :delete, data: {confirm: "Are you sure you want to delete the event '#{@event.name}'? This cannot be undone!"} %>
